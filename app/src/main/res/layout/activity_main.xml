@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ice.test.MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabbar_main">
+    </FrameLayout>
+    <include
+        android:layout_width="match_parent"
+        android:id="@+id/tabbar_main"
+        layout="@layout/tabbar_main_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"></include>
+</RelativeLayout>

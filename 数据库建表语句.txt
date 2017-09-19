@@ -1,0 +1,30 @@
+dbBookNotes
+create table BookClassify(
+	bookid varchar(50) primary key,
+	ClassifyName varchar(50)
+)
+
+create table Book(
+	bookid varchar(50) primary key,
+	name varchar(50),
+	author varchar(50),
+	press varchar(50),
+	ISBN varchar(50),
+	classify varchar(50)
+)
+
+create table user(
+	userid varchar(50) primary key,
+	name varchar(50),
+	password varchar(50)
+)
+
+create table notes(
+	userid varchar(50),
+	bookid varchar(50),
+	date varchar(50),
+	content varchar(1000),
+	primary key(userid,bookid,date),
+	foreign key (userid) references user(userid),
+	foreign key (bookid) references Book(bookid)
+)

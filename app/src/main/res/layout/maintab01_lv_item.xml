@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_margin"
+        android:id="@+id/maintab01_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listitem_height" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ice.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_huizong"
+        android:orderInCategory="100"
+        android:title="@string/huizong"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tongji"
+        android:orderInCategory="100"
+        android:title="@string/tongji"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_version"
+        android:orderInCategory="100"
+        android:title="@string/version"
+        app:showAsAction="never" />
+</menu>
